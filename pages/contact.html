@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green World - Togehter for a Greener World</title>
+    <!-- CSS & Logo -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo_compressed.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap & Data Table -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Javascript -->
+    <script src="./js/app.js" defer></script>
+    <!-- Bootstrap & Data Table -->
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+    <!-- Navigation Menu -->
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block"> Green World </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index_rtl.html">عربي</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./climate-history.html">Climate History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+      <section id="mission">
+        <img class="img-fluid mx-auto d-block" src="img/natur.jpg" alt="Nature">
+        <div class="h1 text-center">Our Mission</div>
+        <p class="text-center text-break fs-4">Founded more than two years ago, our non-profit organization was created to help both individuals and businesses adopt more environmentally sustainable practices. Our mission is to reduce the collective CO2 footprints of organizations of all sizes by providing easy access to accurate and up-to-date data on their regional emissions output. We also strive to inform, educate, and inspire companies to become better stewards of the environment. To this end, we have developed innovative tools and platforms that enable companies to track their emissions levels accurately over time, allowing them to better evaluate and understand their eco footprint, so they can make positive changes. Our team consists of highly qualified experts with a wide range of knowledge in environmental science, engineering, business strategy, data analytics and research methods who work together in a collaborative environment driven by ambition and passion for making the world a better place. </p>
+        <p class="text-center text-break fs-4">We are constantly looking for new opportunities to drive innovation and create meaningful relationships with organizations from all sectors, as well as engaging them in discussions about global warming prevention initiatives. As part of our commitment to corporate social responsibility, we also offer educational programs for employees from various industries which focus on understanding climate change trends, reducing personal carbon footprints, best practices for green living, renewable energy sources and more.</p>
+        <img class="img-fluid mx-auto d-block" src="img/meeresschildkroete.jpg" alt="Sea Turtle">
+        <p class="text-center text-break fs-4">Without furder ado, let's dive into the interesting part: The data about the biggest companies of countries with the highest greenhouse gas emissions and their annual CO2 emissions.</p>
+      </section>
+      <!-- Contact Form -->
+      <div class="h1 text-center">Contact</div>
+      <section id="contact-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <form action="submit_form.php" method="post" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LdwxkUlAAAAABEc5_7zvSe_9Ko6c7CK-jTnwEkb"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <img class="img-fluid mx-auto d-block" src="img/landschaft.jpg" alt="Landscape">
+        <p class="text-center text-break fs-4">We hope this data shed some light upon the worldwide greenhouse gas emissions. Let's all work together towards a sustainable future because this planet is worth fighting for!</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Contact -->
+      <section class="bg-dark text-white pt-5 mt-5">
+        <section class="container py-4 py-md-5 px-4 px-md-3">
+          <div class="row text-md-left">
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fa fa-home"> Berlin, Germany</i></li>
+                  <li class="mb-2"><i class="fa fa-envelope"> info@gw.org</i></li>
+                  <li class="mb-2"><i class="fa fa-phone text-decoration-none"> +49 30 89 030</i></li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="bg-dark text-center text-white">
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
+          </section>
+
+          <!-- Section: Text -->
+          <section class="mb-4">
+            <p>
+              Green World - Together for a Greener World.
+            </p>
+          </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://greenworld.com/">greenworld.com</a>
+        </div>
+      </section>
+    </footer>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form submission is disabled for this demo.");
+      });
+    </script>
+  </body>
+</html>
+
