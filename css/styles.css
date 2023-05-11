@@ -6,6 +6,14 @@ body{
 .bg-dark-green {
   background-color: #003000; 
 }
+
+.navbar {
+  position: static;
+}
+.navbar-nav .dropdown-item {
+    font-style: italic;
+}
+
 .timeline {
     position: relative;
     background: #272e48;
