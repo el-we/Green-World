@@ -27,7 +27,7 @@
     <!-- Header -->
     <header>
     <!-- Navigation Menu -->
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../img/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block"> Green World </a>
@@ -97,56 +97,56 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-      <!-- Contact -->
-      <section class="bg-dark text-white pt-5 mt-5">
-        <section class="container py-4 py-md-5 px-4 px-md-3">
-          <div class="row text-md-left">
-            <div class="col-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fa fa-home"> Berlin, Germany</i></li>
-                  <li class="mb-2"><i class="fa fa-envelope"> info@gw.org</i></li>
-                  <li class="mb-2"><i class="fa fa-phone text-decoration-none"> +49 30 89 030</i></li>
-                </ul>
+    <footer id="footer" class="bg-dark text-white pt-3">
+      <section class="container py-2 px-4 px-md-3">
+        <div class="text-center mb-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold">Contact</h5>
+          <div class="contact-list">
+            <div class="contact-item mb-2">
+              <i class="fa fa-home"></i>
+              <p>Berlin, Germany</p>
             </div>
-          </div>
-        </section>
-      </section>
+            <div class="contact-item mb-2">
+              <i class="fa fa-envelope"></i>
+              <p>info@gw.org</p>
+            </div>
+            <div class="contact-item mb-2">
+              <i class="fa fa-phone text-decoration-none"></i>
+              <p>+49 30 89 030</p>
+            </div>
+         </div>
 
-      <section class="bg-dark text-center text-white">
-        <div class="container p-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
-          </section>
+        </div>
 
+        <div class="text-center mb-3">
+          <h5 class="text-uppercase mb-3 font-weight-bold">Follow us</h5>
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/me" role="button"><i class="fa fa-github"></i></a>
+        </div>
+
+        <div class="text-center mb-3">
           <!-- Section: Text -->
-          <section class="mb-4">
-            <p>
-              Green World - Together for a Greener World.
-            </p>
-          </section>
-        </div>
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2023 Copyright:
-          <a class="text-white" href="https://greenworld.com/">greenworld.com</a>
+          <p>Green World - Together for a Greener World.</p>
         </div>
       </section>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <!-- Copyright -->
+        © 2023 Copyright:
+        <a class="text-white" href="https://greenworld.com/">greenworld.com</a>
+      </div>
     </footer>
+
+
     <script>
       document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault();

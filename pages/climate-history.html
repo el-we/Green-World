@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change Background & History</title>
-    <!-- CSS & Logo -->
+    <!-- CSS, Logo, Icons -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/logo_compressed.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <!-- Bootstrap & Data Table -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
@@ -25,7 +25,7 @@
 <!-- Header -->
   <header>
   <!-- Navigation Menu -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../img/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block"> Green World </a>
@@ -59,94 +59,139 @@
       <h2>The Role of CO2 Emissions</h2>
       <p>Carbon dioxide (CO2) is a greenhouse gas that traps heat in the Earth's atmosphere. Human activities, primarily the burning of fossil fuels like coal, oil, and natural gas, have significantly increased atmospheric CO2 levels since the Industrial Revolution.</p>
     </section>
-    <section class="my-5">
-      <div class="container">
-        <h2 class="mb-4">Key Historical Events</h2>
-        <div class="timeline">
-          <div class="timeline-row">
-            <div class="timeline-time">
-              1896<small>Event 1</small>
-            </div>
-            <div class="timeline-content">
-              <h4>1896: Svante Arrhenius</h4>
-              <p>Swedish scientist Svante Arrhenius publishes the first study linking CO2 emissions to global warming.</p>
-            </div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-time">
-              1958<small>Event 2</small>
-            </div>
-            <div class="timeline-content">
-              <h4>1958: Charles Keeling</h4>
-              <p>Charles Keeling begins measuring atmospheric CO2 levels at Mauna Loa Observatory in Hawaii, revealing a steady increase over time (the "Keeling Curve").</p>
-            </div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-time">
-              1988<small>Event 3</small>
-            </div>
-            <div class="timeline-content">
-              <h4>1988: IPCC</h4>
-              <p>The Intergovernmental Panel on Climate Change (IPCC) is established to assess scientific, technical, and socio-economic information on climate change.</p>
-            </div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-time">
-              1992<small>Event 4</small>
-            </div>
-            <div class="timeline-content">
-              <h4>1992: UNFCCC</h4>
-              <p>The United Nations Framework Convention on Climate Change (UNFCCC) is adopted, aiming to stabilize greenhouse gas concentrations in the atmosphere.</p>
-            </div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-time">
-              1997<small>Event 5</small>
-            </div>
-            <div class="timeline-content">
-              <h4>1997: Kyoto Protocol</h4>
-              <p>The Kyoto Protocol, an international treaty to reduce greenhouse gas emissions, is adopted.</p>
-            </div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-time">
-              2015<small>Event 6</small>
-            </div>
-            <div class="timeline-content">
-              <h4>2015: Paris Agreement</h4>
-              <p>The Paris Agreement is adopted, with the goal of limiting global temperature rise to well below 2°C above pre-industrial levels.</p>
-            </div>
-          </div>
+    <!-- Bisheriges Design 
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h4 style="margin-left: 1.2rem;">Key Historical Events</h4>
+          <ul class="timeline-3">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Svante_Arrhenius">Svante Arrhenius</a>
+              <span class="float-end">1896</span>
+              <p class="mt-2">Swedish scientist Svante Arrhenius publishes the first study linking CO2 emissions to global warming.</p>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Charles_David_Keeling">Charles Keeling</a>
+              <span class="float-end">1958</span>
+              <p class="mt-2">Charles Keeling begins measuring atmospheric CO2 levels at Mauna Loa Observatory in Hawaii, revealing a steady increase over time (the "Keeling Curve").</p>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change">IPCC</a>
+              <span class="float-end">1988</span>
+              <p class="mt-2">The Intergovernmental Panel on Climate Change (IPCC) is established to assess scientific, technical, and socio-economic information on climate change.</p>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change">UNFCCC</a>
+              <span class="float-end">1992</span>
+              <p class="mt-2">The United Nations Framework Convention on Climate Change (UNFCCC) is adopted, aiming to stabilize greenhouse gas concentrations in the atmosphere.</p>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Kyoto_Protocol">Kyoto Protocol</a>
+              <span class="float-end">1997</span>
+              <p class="mt-2">The Kyoto Protocol, an international treaty to reduce greenhouse gas emissions, is adopted.</p>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Paris_Agreement">Paris Agreement</a>
+              <span class="float-end">2015</span>
+              <p class="mt-2">The Paris Agreement is adopted, with the goal of limiting global temperature rise to well below 2°C above pre-industrial levels.</p>
+            </li>
+          </ul>
         </div>
       </div>
+    </section>-->
+    <!-- Section: Timeline -->
+    <section class="py-5">
+      <ul class="timeline-with-icons">
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-globe text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Svante_Arrhenius"><h5 class="fw-bold">Svante Arrhenius</h5></a>
+          <p class="text-muted mb-2 fw-bold">1896</p>
+          <p class="text-muted">Swedish scientist Svante Arrhenius publishes the first study linking CO2 emissions to global warming.</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-chart-line text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Charles_David_Keeling"><h5 class="fw-bold">Charles Keeling</h5></a>
+          <p class="text-muted mb-2 fw-bold">1958</p>
+          <p class="text-muted">Charles Keeling begins measuring atmospheric CO2 levels at Mauna Loa Observatory in Hawaii, revealing a steady increase over time (the "Keeling Curve").</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-clipboard-list text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change"><h5 class="fw-bold">IPCC</h5></a>
+          <p class="text-muted mb-2 fw-bold">1988</p>
+          <p class="text-muted">The Intergovernmental Panel on Climate Change (IPCC) is established to assess scientific, technical, and socio-economic information on climate change.</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-globe-americas text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change"><h5 class="fw-bold">UNFCCC</h5></a>
+          <p class="text-muted mb-2 fw-bold">1992</p>
+          <p class="text-muted">The United Nations Framework Convention on Climate Change (UNFCCC) is adopted, aiming to stabilize greenhouse gas concentrations in the atmosphere.</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-leaf text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Kyoto_Protocol"><h5 class="fw-bold">Kyoto Protocol</h5></a>
+          <p class="text-muted mb-2 fw-bold">1997</p>
+          <p class="text-muted">The Kyoto Protocol, an international treaty to reduce greenhouse gas emissions, is adopted.</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-handshake text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Paris_Agreement"><h5 class="fw-bold">Paris Agreement</h5></a>
+          <p class="text-muted mb-2 fw-bold">2015</p>
+          <p class="text-muted">The Paris Agreement is adopted, with the goal of limiting global temperature rise to well below 2°C above pre-industrial levels.</p>
+        </li>
+
+        <li class="timeline-item mb-5">
+          <span class="timeline-icon">
+            <i class="fas fa-user text-primary fa-sm fa-fw"></i>
+          </span>
+          <a href="https://en.wikipedia.org/wiki/Greta_Thunberg"><h5 class="fw-bold">Greta Thunberg and Fridays for Future</h5></a>
+          <p class="text-muted mb-2 fw-bold">2018</p>
+          <p class="text-muted">Swedish environmental activist Greta Thunberg begins a school strike for climate, inspiring the global youth-led movement known as Fridays for Future.</p>
+        </li>
+      </ul>
     </section>
+    <!-- Section: Timeline -->
+    <section class="my-5">
+      <h2>Climate Change Today</h2>
+      <p>Today, the Earth is warming at a much faster rate than in the past. Scientists have concluded that the main cause of global warming is the greenhouse effect, a phenomenon that occurs when gases in the atmosphere trap the Sun's heat. The greenhouse effect is so named because of the way it works. Visible light from the Sun shines onto Earth, where it is absorbed and then radiates back into the atmosphere as heat. Some of the heat passes through the atmosphere, but most of it is absorbed by greenhouse gases and re-emitted in all directions, warming the surface of the Earth and the lower atmosphere.</p>
   </main>
   
 <!-- Footer -->
   <footer id="footer">
     <!-- Contact -->
-    <section class="bg-dark text-white pt-5 mt-5">
-      <section class="container py-4 py-md-5 px-4 px-md-3">
+    <section class="bg-dark text-white pt-4 mt-4">
+      <section class="container py-2 px-4 px-md-3">
         <div class="row text-md-left">
           <div class="col-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
             <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-              <ul class="list-unstyled">
-                <li class="mb-2"><i class="fa fa-home"> Berlin, Germany</i></li>
-                <li class="mb-2"><i class="fa fa-envelope"> info@gw.org</i></li>
-                <li class="mb-2"><i class="fa fa-phone text-decoration-none"> +49 30 89 030</i></li>
-              </ul>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fa fa-home"></i> Berlin, Germany</li>
+              <li class="mb-2"><i class="fa fa-envelope"></i> info@gw.org</li>
+              <li class="mb-2"><i class="fa fa-phone text-decoration-none"></i> +49 30 89 030</li>
+            </ul>
           </div>
         </div>
       </section>
     </section>
 
     <section class="bg-dark text-center text-white">
-      <div class="container p-4">
+      <div class="container p-2">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
@@ -172,7 +217,7 @@
       </div>
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2023 Copyright:
         <a class="text-white" href="https://greenworld.com/">greenworld.com</a>
       </div>
