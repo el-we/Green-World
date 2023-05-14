@@ -13,34 +13,8 @@ main{
 }
 
 
-.contact-list {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-item i {
-  flex-basis: 30px;
-  text-align: center;
-}
-
-.contact-item p {
-  margin: 0;
-}
-
 /* Media query for large screens */
 @media (min-width: 577px) {
-
-  .contact-list {
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 40%;
-  }
 
   /* Timeline */
   /* Adjust the position of the timeline & border */
@@ -85,12 +59,6 @@ main{
 /* Media query for small screens */
 @media (max-width: 576px) {
   
-  .contact-list {
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 24%;
-  }
-
   /* Timeline */
   /* Adjust the space between icons and text */
   .timeline-with-icons .timeline-item {
