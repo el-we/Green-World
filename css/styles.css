@@ -1,8 +1,4 @@
-/*body{
-    margin-top:20px;
-    color: #bcd0f7;
-    background: #1A233A;
-}*/
+
 main{
     margin-top: 4rem;
 }
@@ -12,6 +8,35 @@ main{
     font-style: italic;
 }
 
+/* Table */
+#co2_paginate .paginate_button {
+    padding: 6px 12px;
+    border: 1px solid #212529; /* dark grey tone */
+    color: #528265; /* greenish tone */
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none; /* Removes underline */
+}
+
+#co2_paginate .paginate_button:hover {
+    color: white;
+    background-color: #528265; /* greenish tone */
+    border-color: #528265; /* greenish tone */
+}
+
+#co2_paginate .paginate_button.current, 
+#co2_paginate .paginate_button.current:hover {
+    color: white !important;
+    border: 1px solid #528265; /* greenish tone */
+    background-color: #528265; /* greenish tone */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #528265), color-stop(100%, #528265));
+    background: -webkit-linear-gradient(top, #528265 0%, #528265 100%);
+    background: -moz-linear-gradient(top, #528265 0%, #528265 100%);
+    background: -ms-linear-gradient(top, #528265 0%, #528265 100%);
+    background: -o-linear-gradient(top, #528265 0%, #528265 100%);
+    background: linear-gradient(to bottom, #528265 0%, #528265 100%);
+}
+/* Table - End */
 
 /* Media query for large screens */
 @media (min-width: 577px) {

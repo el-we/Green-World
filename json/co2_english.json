@@ -1,0 +1,244 @@
+{
+    "Eng_Data": [
+        {
+            "Country": "Albania",
+            "Company": "Grecon",
+            "Annual CO2 emissions (in t)": "1843505"
+        },
+        {
+            "Country": "Albania",
+            "Company": "Rewo",
+            "Annual CO2 emissions (in t)": "4001334"
+        },
+        {
+            "Country": "Bermuda",
+            "Company": "Alpak",
+            "Annual CO2 emissions (in t)": "213297"
+        },
+        {
+            "Country": "Bermuda",
+            "Company": "Hiem",
+            "Annual CO2 emissions (in t)": "195470"
+        },
+        {
+            "Country": "Bhutan",
+            "Company": "Nioqp",
+            "Annual CO2 emissions (in t)": "2464"
+        },
+        {
+            "Country": "Bhutan",
+            "Company": "Feru",
+            "Annual CO2 emissions (in t)": "868412"
+        },
+        {
+            "Country": "Chile",
+            "Company": "Opao",
+            "Annual CO2 emissions (in t)": "8152414"
+        },
+        {
+            "Country": "Chile",
+            "Company": "Anqy",
+            "Annual CO2 emissions (in t)": "63502169"
+        },
+        {
+            "Country": "China",
+            "Company": "Choam",
+            "Annual CO2 emissions (in t)": "9431227812"
+        },
+        {
+            "Country": "China",
+            "Company": "Acme Corp",
+            "Annual CO2 emissions (in t)": "10003877188"
+        },
+        {
+            "Country": "Cuba",
+            "Company": "Sirius ",
+            "Annual CO2 emissions (in t)": "12787483"
+        },
+        {
+            "Country": "Cuba",
+            "Company": "Cybernetics ",
+            "Annual CO2 emissions (in t)": "14094633"
+        },
+        {
+            "Country": "Finland",
+            "Company": "MomCorp",
+            "Annual CO2 emissions (in t)": "731239"
+        },
+        {
+            "Country": "Finland",
+            "Company": "Rich Industries",
+            "Annual CO2 emissions (in t)": "29479657"
+        },
+        {
+            "Country": "France",
+            "Company": "Soylent Corp.",
+            "Annual CO2 emissions (in t)": "158519924"
+        },
+        {
+            "Country": "France",
+            "Company": "Frobozz Magic Co.",
+            "Annual CO2 emissions (in t)": "33672567"
+        },
+        {
+            "Country": "Germany",
+            "Company": "Warbucks Industries",
+            "Annual CO2 emissions (in t)": "336089298"
+        },
+        {
+            "Country": "Germany",
+            "Company": "Tyrell Corp.",
+            "Annual CO2 emissions (in t)": "316269625"
+        },
+        {
+            "Country": "Ghana",
+            "Company": "Wayne Enterprises",
+            "Annual CO2 emissions (in t)": "12103002"
+        },
+        {
+            "Country": "Ghana",
+            "Company": "Virtucon",
+            "Annual CO2 emissions (in t)": "3024230"
+        },
+        {
+            "Country": "Liechtenstein",
+            "Company": "Globex",
+            "Annual CO2 emissions (in t)": "27411"
+        },
+        {
+            "Country": "Liechtenstein",
+            "Company": "Umbrella Corp.",
+            "Annual CO2 emissions (in t)": "15403"
+        },
+        {
+            "Country": "Lithuania",
+            "Company": "Wonka Industries",
+            "Annual CO2 emissions (in t)": "8257807"
+        },
+        {
+            "Country": "Lithuania",
+            "Company": "Stark Industries",
+            "Annual CO2 emissions (in t)": "3358560"
+        },
+        {
+            "Country": "Luxembourg",
+            "Company": "Clampett Oil",
+            "Annual CO2 emissions (in t)": "4043975"
+        },
+        {
+            "Country": "Luxembourg",
+            "Company": "Oceanic Airlines",
+            "Annual CO2 emissions (in t)": "7779714"
+        },
+        {
+            "Country": "Macao",
+            "Company": "Yoyodyne",
+            "Annual CO2 emissions (in t)": "984474"
+        },
+        {
+            "Country": "Macao",
+            "Company": "Propulsion Sys.",
+            "Annual CO2 emissions (in t)": "180316"
+        },
+        {
+            "Country": "Namibia",
+            "Company": "Cyberdyne",
+            "Annual CO2 emissions (in t)": "3352456"
+        },
+        {
+            "Country": "Namibia",
+            "Company": "Systems Corp.",
+            "Annual CO2 emissions (in t)": "1025373"
+        },
+        {
+            "Country": "Nigeria",
+            "Company": "Danconia Copper",
+            "Annual CO2 emissions (in t)": "95264656"
+        },
+        {
+            "Country": "Nigeria",
+            "Company": "Gringotta",
+            "Annual CO2 emissions (in t)": "105453306"
+        },
+        {
+            "Country": "Portugal",
+            "Company": "Oscorp",
+            "Annual CO2 emissions (in t)": "5144691"
+        },
+        {
+            "Country": "Portugal",
+            "Company": "Nakatomi",
+            "Annual CO2 emissions (in t)": "1769340"
+        },
+        {
+            "Country": "Spain",
+            "Company": "Trading Corp",
+            "Annual CO2 emissions (in t)": "87789611"
+        },
+        {
+            "Country": "Spain",
+            "Company": "Spacely",
+            "Annual CO2 emissions (in t)": "31974040"
+        },
+        {
+            "Country": "Sweden",
+            "Company": "Space Industries",
+            "Annual CO2 emissions (in t)": "20507139"
+        },
+        {
+            "Country": "Sweden",
+            "Company": "Sprockets Co.",
+            "Annual CO2 emissions (in t)": "16766576"
+        },
+        {
+            "Country": "Switzerland",
+            "Company": "Money Industries",
+            "Annual CO2 emissions (in t)": "21514726"
+        },
+        {
+            "Country": "Switzerland",
+            "Company": "Evil Corp.",
+            "Annual CO2 emissions (in t)": "31967737"
+        },
+        {
+            "Country": "Ukraine",
+            "Company": "Bottogo",
+            "Annual CO2 emissions (in t)": "163562356"
+        },
+        {
+            "Country": "Ukraine",
+            "Company": "Venetia Co.",
+            "Annual CO2 emissions (in t)": "98697214"
+        },
+        {
+            "Country": "United Arab Emirates",
+            "Company": "Oil Giant",
+            "Annual CO2 emissions (in t)": "106082338"
+        },
+        {
+            "Country": "United Arab Emirates",
+            "Company": "United Oil",
+            "Annual CO2 emissions (in t)": "35867604"
+        },
+        {
+            "Country": "United Kingdom",
+            "Company": "Arts Ltd.",
+            "Annual CO2 emissions (in t)": "265938262"
+        },
+        {
+            "Country": "United Kingdom",
+            "Company": "Banking Group",
+            "Annual CO2 emissions (in t)": "779408"
+        },
+        {
+            "Country": "United States",
+            "Company": "Very Big Corp. Of America",
+            "Annual CO2 emissions (in t)": "830410295"
+        },
+        {
+            "Country": "United States",
+            "Company": "Dieselmotors Co.",
+            "Annual CO2 emissions (in t)": "4317396080"
+        }
+    ]
+}
