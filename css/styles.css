@@ -7,6 +7,7 @@ main{
 .navbar-nav .dropdown-item {
     font-style: italic;
 }
+/* Nav Bar - End */
 
 /* Table */
 #co2_paginate .paginate_button {
@@ -36,7 +37,43 @@ main{
     background: -o-linear-gradient(top, #528265 0%, #528265 100%);
     background: linear-gradient(to bottom, #528265 0%, #528265 100%);
 }
+
+/* Table rows hover */
+#co2 tbody tr:hover {
+  background-color: #528265;
+  color: white;
+}
+
 /* Table - End */
+
+/* Contact */
+.btn.custom-submit {
+  background-color: #528265;
+  border-color: #528265;
+  color: white;
+}
+
+.btn.custom-submit:hover {
+  background-color: whitesmoke;
+  border-color: #528265;
+  color: #528265;
+}
+/* Contact - End */
+
+
+/* Social Media Buttons */
+.btn.social-media {
+  background-color: #528265;
+  border-color: #528265;
+  color: white;
+}
+
+.btn.social-media:hover {
+  background-color: whitesmoke;
+  border-color: #528265;
+  color: #528265;
+}
+/* Social Media Buttons - End */
 
 /* Media query for large screens */
 @media (min-width: 577px) {
@@ -78,7 +115,7 @@ main{
     align-items: center;
     justify-content: center;
   }
-  /* Timeline */
+/* Timeline - End */
 }
 
 /* Media query for small screens */
@@ -124,7 +161,7 @@ main{
     align-items: center;
     justify-content: center;
   }
-  /* Timeline */
+  /* Timeline - End */
 }
 
 

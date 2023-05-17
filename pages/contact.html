@@ -16,6 +16,7 @@
     <!-- Google reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -54,51 +55,51 @@
         <p class="text-center text-break px-md-5 fs-4">
           Your involvement and support are crucial in our journey towards a cleaner and more sustainable future. Together, we can make a difference and help preserve our planet for future generations.
         </p>
-     </section>
-     <!-- About Section -->
-    <section id="about-text" class="my-5 pt-5">
-        <div class="h2 text-center pb-3">About Us</div>
-        <p class="text-center text-break px-md-5 fs-4">Green World is a non-profit environmental organization committed to addressing the urgent issues of climate change and environmental degradation. Founded in 2023, we've made it our mission to promote sustainable practices, protect the environment, and educate the public about the impact of CO2 emissions. Our team consists of dedicated environmental scientists, educators, and activists spread across the globe, working tirelessly to create a greener, more sustainable world for future generations.</p>
-    </section>
+      </section>
+      <!-- About Section -->
+      <section id="about-text" class="my-5 pt-5">
+          <div class="h2 text-center pb-3">About Us</div>
+          <p class="text-center text-break px-md-5 fs-4">Green World is a non-profit environmental organization committed to addressing the urgent issues of climate change and environmental degradation. Founded in 2023, we've made it our mission to promote sustainable practices, protect the environment, and educate the public about the impact of CO2 emissions. Our team consists of dedicated environmental scientists, educators, and activists spread across the globe, working tirelessly to create a greener, more sustainable world for future generations.</p>
+      </section>
 
-    <!-- Our Work Section -->
-    <section id="our-work-text" class="my-5 pt-5">
-        <div class="h2 text-center py-3">Our Work</div>
-        <p class="text-center text-break px-md-5 fs-4">Our initiatives are focused on three primary areas: Climate Change Advocacy, Environmental Protection, and Corporate Responsibility.</p>
+      <!-- Our Work Section -->
+      <section id="our-work-text" class="my-5 pt-5">
+          <div class="h2 text-center py-3">Our Work</div>
+          <p class="text-center text-break px-md-5 fs-4">Our initiatives are focused on three primary areas: Climate Change Advocacy, Environmental Protection, and Corporate Responsibility.</p>
 
-        <div class="h3 text-center py-3">Climate Change Advocacy</div>
-        <p class="text-center text-break px-md-5 fs-4">We actively campaign for stronger climate policies and increased investment in renewable energy. Through our advocacy work, we aim to influence decision-makers and drive systemic change to reduce global CO2 emissions.</p>
+          <div class="h3 text-center py-3">Climate Change Advocacy</div>
+          <p class="text-center text-break px-md-5 fs-4">We actively campaign for stronger climate policies and increased investment in renewable energy. Through our advocacy work, we aim to influence decision-makers and drive systemic change to reduce global CO2 emissions.</p>
 
-        <div class="h3 text-center py-3">Environmental Protection</div>
-        <p class="text-center text-break px-md-5 fs-4">We undertake a range of projects to protect and restore our natural environment. This includes reforestation efforts, biodiversity conservation, and protecting endangered species. We believe in the importance of maintaining the health and vitality of our planet's ecosystems for the benefit of all life on Earth.</p>
+          <div class="h3 text-center py-3">Environmental Protection</div>
+          <p class="text-center text-break px-md-5 fs-4">We undertake a range of projects to protect and restore our natural environment. This includes reforestation efforts, biodiversity conservation, and protecting endangered species. We believe in the importance of maintaining the health and vitality of our planet's ecosystems for the benefit of all life on Earth.</p>
 
-        <div class="h3 text-center py-3">Corporate Responsibility</div>
-        <p class="text-center text-break px-md-5 fs-4">We hold corporations accountable for their environmental impact. Through our Corporate Responsibility program, we encourage businesses to adopt sustainable practices, reduce their carbon footprint, and invest in green technologies. Our annual Green World Index ranks companies and countries based on their CO2 emissions, providing a transparent and accessible overview of their environmental impact.</p>
-    </section>
+          <div class="h3 text-center py-3">Corporate Responsibility</div>
+          <p class="text-center text-break px-md-5 fs-4">We hold corporations accountable for their environmental impact. Through our Corporate Responsibility program, we encourage businesses to adopt sustainable practices, reduce their carbon footprint, and invest in green technologies. Our annual Green World Index ranks companies and countries based on their CO2 emissions, providing a transparent and accessible overview of their environmental impact.</p>
+      </section>
 
       <!-- Contact Form -->
       <div class="h1 text-center pt-5">Contact</div>
       <section id="contact-form">
         <div class="container pb-5">
-                  <div class="row">
+          <div class="row">
             <div class="col-md-8 offset-md-2">
               <form action="submit_form.php" method="post" id="contactForm">
                 <div class="form-group">
-                  <label for="name">Name:</label>
+                  <label for="name" class="form-label">Name:</label>
                   <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email:</label>
+                  <label for="email" class="form-label">Email:</label>
                   <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                  <label for="message">Message:</label>
+                  <label for="message" class="form-label">Message:</label>
                   <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 </div>
                 <div class="form-group">
                   <div class="g-recaptcha" data-sitekey="6LdwxkUlAAAAABEc5_7zvSe_9Ko6c7CK-jTnwEkb"></div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn custom-submit">Submit</button>
               </form>
             </div>
           </div>
@@ -111,7 +112,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <!-- Contact -->
       <section class="bg-dark text-white pt-4 mt-4">
         <section class="container py-2 px-4 px-md-3">
@@ -133,17 +134,17 @@
           <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
             <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
             <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
           </section>
 
           <!-- Section: Text -->
@@ -161,7 +162,6 @@
         </div>
       </section>
     </footer>
-
 
     <script>
       document.getElementById("contactForm").addEventListener("submit", function(event) {
