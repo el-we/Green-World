@@ -29,21 +29,13 @@ main{
 #co2_paginate .paginate_button.current:hover {
     color: white !important;
     border: 1px solid #528265; /* greenish tone */
-    background-color: #528265; /* greenish tone */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #528265), color-stop(100%, #528265));
-    background: -webkit-linear-gradient(top, #528265 0%, #528265 100%);
-    background: -moz-linear-gradient(top, #528265 0%, #528265 100%);
-    background: -ms-linear-gradient(top, #528265 0%, #528265 100%);
-    background: -o-linear-gradient(top, #528265 0%, #528265 100%);
-    background: linear-gradient(to bottom, #528265 0%, #528265 100%);
+    background-image: linear-gradient(to bottom, #528265 0%, #528265 100%);
 }
 
-/* Table rows hover */
 #co2 tbody tr:hover {
   background-color: #528265;
   color: white;
 }
-
 /* Table - End */
 
 /* Contact */
@@ -74,6 +66,13 @@ main{
   color: #528265;
 }
 /* Social Media Buttons - End */
+
+/* Copyright */
+.copyright {
+  color: #fff;
+  background-color: #00000033;
+}
+/* Copyright - End */
 
 /* Media query for large screens */
 @media (min-width: 577px) {
