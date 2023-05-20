@@ -3,30 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> عالم أخضر - معًا من أجل عالم أكثر خضرة.</title>
-    <!-- CSS & Logo-->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/logo_compressed.png">
-    <!-- Bootstrap & Data Table -->
+    <title>العالم الأخضر - معاً من أجل عالم أكثر خضرة</title>
+    <!-- CSS & Logo -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo_compressed.png">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-    <!-- Javascript -->
-    <script src="./js/app.js" defer></script>
-    <!-- Bootstrap & Data Table -->
-    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="//cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- jQuery & DataTables -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/app_arab.js" defer></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
-    <!-- Navigation Menu -->
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block " > عالم أخضر </a>
+            <img src="img/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block"> العالم الأخضر </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,13 +38,22 @@
                 <a class="nav-link" href="/index.html">English</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#mission">بعثة</a>
+                <a class="nav-link" href="./pages/climate-history_rtl.html">تاريخ المناخ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#table">الطاولة</a>
+                <a class="nav-link" href="./pages/contact_rtl.html">تواصل معنا</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">تذييل</a>
+              <!-- Local Links Dropdown Container -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  بداية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#mission">مهمتنا</a></li>
+                  <li><a class="dropdown-item" href="#table">الجدول</a></li>
+                  <li><a class="dropdown-item" href="#footer">تذييل الصفحة</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -51,326 +62,87 @@
     
     <!-- Main Content -->
     <main>
-      <section id="mission">
-        <img class="img-fluid mx-auto d-block" src="img/natur.jpg" alt="طبيعة سجية">
-        <div class="h1 text-center">مهمتنا</div>
-        <p class="text-center text-break fs-4">تأسست منذ أكثر من عامين ، تم إنشاء منظمتنا غير الربحية لمساعدة كل من الأفراد والشركات على تبني ممارسات أكثر استدامة بيئيًا. مهمتنا هي تقليل البصمات الجماعية لثاني أكسيد الكربون للمؤسسات من جميع الأحجام من خلال توفير وصول سهل إلى بيانات دقيقة ومحدثة حول مخرجات الانبعاثات الإقليمية الخاصة بهم. نسعى أيضًا إلى إعلام الشركات وتثقيفها وإلهامها لتصبح مشرفًا أفضل على البيئة. تحقيقًا لهذه الغاية ، قمنا بتطوير أدوات ومنصات مبتكرة تمكن الشركات من تتبع مستويات انبعاثاتها بدقة بمرور الوقت ، مما يسمح لهم بتقييم وفهم بصمتهم البيئية بشكل أفضل ، حتى يتمكنوا من إجراء تغييرات إيجابية. يتكون فريقنا من خبراء مؤهلين تأهيلاً عالياً مع مجموعة واسعة من المعرفة في العلوم البيئية والهندسة واستراتيجية الأعمال وتحليلات البيانات وأساليب البحث الذين يعملون معًا في بيئة تعاونية مدفوعة بالطموح والشغف لجعل العالم مكانًا أفضل.</p>
-        <p class="text-center text-break fs-4">نحن نبحث باستمرار عن فرص جديدة لدفع الابتكار وخلق علاقات هادفة مع المنظمات من جميع القطاعات ، فضلا عن إشراكهم في المناقشات حول مبادرات الوقاية من الاحتباس الحراري. كجزء من التزامنا بالمسؤولية الاجتماعية للشركات ، نقدم أيضًا برامج تعليمية للموظفين من مختلف الصناعات التي تركز على فهم اتجاهات تغير المناخ ، والحد من انبعاثات الكربون الشخصية ، وأفضل الممارسات للحياة الخضراء ، ومصادر الطاقة المتجددة والمزيد.</p>
-        <img class="img-fluid mx-auto d-block" src="img/meeresschildkroete.jpg" alt="سلحفاة">
-        <p class="text-center text-break fs-4">دون مزيد من اللغط ، دعنا نتعمق في الجزء المثير للاهتمام: البيانات الخاصة بأكبر الشركات في البلدان التي لديها أعلى انبعاثات غازات الاحتباس الحراري وانبعاثاتها السنوية من ثاني أكسيد الكربون.</p>
+      <section id="mission" class="pt-2">
+        <img class="img-fluid mx-auto d-block" src="img/natur.jpg" alt="Nature">
+        <div class="h1 text-center pt-4">مهمتنا</div>
+        <p class="text-center text-break px-md-5 fs-4">تأسست منظمتنا البيئية غير الربحية منذ أكثر من عامين بهدف مساعدة الأفراد والشركات على اعتماد ممارسات أكثر استدامة بيئيًا. مهمتنا هي تقليل البصمة الكربونية الجماعية للمنظمات من جميع الأحجام عبر توفير الوصول السهل إلى بيانات دقيقة ومحدثة حول إنتاج الانبعاثات في مناطقهم. نحن نسعى أيضًا لإبلاغ وتثقيف وإلهام الشركات لتصبح أفضل الرعاة للبيئة. ولهذا الغرض، قمنا بتطوير أدوات ومنصات مبتكرة تمكن الشركات من تتبع مستويات انبعاثاتها بدقة على مر الزمن، مما يتيح لهم تقييم وفهم بصمتهم البيئية بشكل أفضل، حتى يتمكنوا من إجراء التغييرات الإيجابية. يتألف فريقنا من خبراء مؤهلين تأهيلاً عالياً ذوي مجموعة واسعة من المعرفة في العلوم البيئية، والهندسة، واستراتيجية الأعمال، وتحليلات البيانات وأساليب البحث الذين يعملون معًا في بيئة تعاونية مدفوعة بالطموح والشغف لجعل العالم مكانًا أفض</p>
+        <p class="text-center text-break px-md-5 fs-4">تأسست منظمتنا البيئية غير الربحية منذ أكثر من عامين بهدف مساعدة الأفراد والشركات على اعتماد ممارسات أكثر استدامة بيئيًا. مهمتنا هي تقليل البصمة الكربونية الجماعية للمنظمات من جميع الأحجام عبر توفير الوصول السهل إلى بيانات دقيقة ومحدثة حول إنتاج الانبعاثات في مناطقهم. نحن نسعى أيضًا لإبلاغ وتثقيف وإلهام الشركات لتصبح أفضل الرعاة للبيئة. ولهذا الغرض، قمنا بتطوير أدوات ومنصات مبتكرة تمكن الشركات من تتبع مستويات انبعاثاتها بدقة على مر الزمن، مما يتيح لهم تقييم وفهم بصمتهم البيئية بشكل أفضل، حتى يتمكنوا من إجراء التغييرات الإيجابية. يتألف فريقنا من خبراء مؤهلين تأهيلاً عالياً ذوي مجموعة واسعة من المعرفة في العلوم البيئية، والهندسة، واستراتيجية الأعمال، وتحليلات البيانات وأساليب البحث الذين يعملون معًا في بيئة تعاونية مدفوعة بالطموح والشغف لجعل العالم مكانًا أفضل للجميع.</p>
+        <img class="img-fluid mx-auto d-block" src="img/meeresschildkroete.jpg" alt="سلحفاة البحر">
+        <p class="text-center text-break py-4 px-md-5 fs-4">دون مزيد من التأجيل، دعونا نغوص في الجزء المثير للاهتمام: البيانات حول أكبر الشركات في البلدان ذات الانبعاثات الغازية الأكبر وانبعاثاتها السنوية من غاز ثاني أكسيد الكربون.</p>
       </section>
-      <div class="h1 text-center">الطاولة</div>
-      <section id="table">
+      <div class="h1 text-center pt-4">الجدول</div>
+      <section id="table" class="pt-4 pb-5 px-md-5">
         <article>
           <table id="co2" class="table table-striped" style="width:100%">
             <thead>
-              <tr>
-                <th>دولة</th>
-                <th>شركة</th>
-                <th>انبعاثات ثاني أكسيد الكربون السنوية (بالطن)</th>
-              </tr>
+                <tr>
+                    <th>الدولة</th>
+                    <th>الشركة</th>
+                    <th>الانبعاثات السنوية لغاز ثاني أكسيد الكربون (بالطن)</th>
+                </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>ألبانيا</td>
-                <td>Grecon</td>
-                <td>1843505</td>
-              </tr>
-              <tr>
-                <td>ألبانيا</td>
-                <td>Rewo</td>
-                <td>4001334</td>
-              </tr>
-              <tr>
-                <td>برمودا</td>
-                <td>Alpak</td>
-                <td>213297</td>
-              </tr>
-              <tr>
-                <td>برمودا</td>
-                <td>Hiem</td>
-                <td>195470</td>
-              </tr>
-              <tr>
-                <td>بوتان</td>
-                <td>Nioqp</td>
-                <td>2464</td>
-              </tr>
-              <tr>
-                <td>بوتان</td>
-                <td>Feru</td>
-                <td>868412</td>
-              </tr>
-              <tr>
-                <td>تشيلي</td>
-                <td>Opao</td>
-                <td>8152414</td>
-              </tr>
-              <tr>
-                <td>تشيلي</td>
-                <td>Anqy</td>
-                <td>63502169</td>
-              </tr>
-              <tr>
-                <td>الصين</td>
-                <td>Choam</td>
-                <td>9431227812</td>
-              </tr>
-              <tr>
-                <td>الصين</td>
-                <td>Acme Corp</td>
-                <td>10003877188</td>
-              </tr>
-              <tr>
-                <td>كوبا</td>
-                <td>Sirius </td>
-                <td>12787483</td>
-              </tr>
-              <tr>
-                <td>كوبا</td>
-                <td>Cybernetics </td>
-                <td>14094633</td>
-              </tr>
-              <tr>
-                <td>فنلندا</td>
-                <td>MomCorp</td>
-                <td>731239</td>
-              </tr>
-              <tr>
-                <td>فنلندا</td>
-                <td>Rich Industries</td>
-                <td>29479657</td>
-              </tr>
-              <tr>
-                <td>فرنسا</td>
-                <td>Soylent Corp.</td>
-                <td>158519924</td>
-              </tr>
-              <tr>
-                <td>فرنسا</td>
-                <td>Frobozz Magic Co.</td>
-                <td>33672567</td>
-              </tr>
-              <tr>
-                <td>ألمانيا</td>
-                <td>Warbucks Industries</td>
-                <td>336089298</td>
-              </tr>
-              <tr>
-                <td>ألمانيا</td>
-                <td>Tyrell Corp.</td>
-                <td>316269625</td>
-              </tr>
-              <tr>
-                <td>غانا</td>
-                <td>Wayne Enterprises</td>
-                <td>12103002</td>
-              </tr>
-              <tr>
-                <td>غانا</td>
-                <td>Virtucon</td>
-                <td>3024230</td>
-              </tr>
-              <tr>
-                <td>ليختنشتاين</td>
-                <td>Globex</td>
-                <td>27411</td>
-              </tr>
-              <tr>
-                <td>ليختنشتاين</td>
-                <td>Umbrella Corp.</td>
-                <td>15403</td>
-              </tr>
-              <tr>
-                <td>ليتوانيا</td>
-                <td>Wonka Industries</td>
-                <td>8257807</td>
-              </tr>
-              <tr>
-                <td>ليتوانيا</td>
-                <td>Stark Industries</td>
-                <td>3358560</td>
-              </tr>
-              <tr>
-                <td>لوكسمبورغ</td>
-                <td>Clampett Oil</td>
-                <td>4043975</td>
-              </tr>
-              <tr>
-                <td>لوكسمبورغ</td>
-                <td>Oceanic Airlines</td>
-                <td>7779714</td>
-              </tr>
-              <tr>
-                <td>ماكاو</td>
-                <td>Yoyodyne</td>
-                <td>984474</td>
-              </tr>
-              <tr>
-                <td>ماكاو</td>
-                <td>Propulsion Sys.</td>
-                <td>180316</td>
-              </tr>
-              <tr>
-                <td>ناميبيا</td>
-                <td>Cyberdyne</td>
-                <td>3352456</td>
-              </tr>
-              <tr>
-                <td>ناميبيا</td>
-                <td>Systems Corp.</td>
-                <td>1025373</td>
-              </tr>
-              <tr>
-                <td>نيجيريا</td>
-                <td>Danconia Copper</td>
-                <td>95264656</td>
-              </tr>
-              <tr>
-                <td>نيجيريا</td>
-                <td>Gringotta</td>
-                <td>105453306</td>
-              </tr>
-              <tr>
-                <td>البرتغال</td>
-                <td>Oscorp</td>
-                <td>5144691</td>
-              </tr>
-              <tr>
-                <td>البرتغال</td>
-                <td>Nakatomi</td>
-                <td>1769340</td>
-              </tr>
-              <tr>
-                <td>إسبانيا</td>
-                <td>Trading Corp</td>
-                <td>87789611</td>
-              </tr>
-              <tr>
-                <td>إسبانيا</td>
-                <td>Spacely</td>
-                <td>31974040</td>
-              </tr>
-              <tr>
-                <td>السويد</td>
-                <td>Space Industries</td>
-                <td>20507139</td>
-              </tr>
-              <tr>
-                <td>السويد</td>
-                <td>Sprockets Co.</td>
-                <td>16766576</td>
-              </tr>
-              <tr>
-                <td>سويسرا</td>
-                <td>Money Industries</td>
-                <td>21514726</td>
-              </tr>
-              <tr>
-                <td>سويسرا</td>
-                <td>Evil Corp.</td>
-                <td>31967737</td>
-              </tr>
-              <tr>
-                <td>أوكرانيا</td>
-                <td>Bottogo</td>
-                <td>163562356</td>
-              </tr>
-              <tr>
-                <td>أوكرانيا</td>
-                <td>Venetia Co.</td>
-                <td>98697214</td>
-              </tr>
-              <tr>
-                <td>الإمارات العربية المتحدة</td>
-                <td>Oil Giant</td>
-                <td>106082338</td>
-              </tr>
-              <tr>
-                <td>الإمارات العربية المتحدة</td>
-                <td>United Oil</td>
-                <td>35867604</td>
-              </tr>
-              <tr>
-                <td>المملكة المتحدة</td>
-                <td>Arts Ltd.</td>
-                <td>265938262</td>
-              </tr>
-              <tr>
-                <td>المملكة المتحدة</td>
-                <td>Banking Group</td>
-                <td>779408</td>
-              </tr>
-              <tr>
-                <td>الولايات المتحدة الأمريكية</td>
-                <td>Very Big Corp. Of America</td>
-                <td>830410295</td>
-              </tr>
-              <tr>
-                <td>الولايات المتحدة الأمريكية</td>
-                <td>Dieselmotors Co.</td>
-                <td>4317396080</td>
-              </tr>
-            </tbody>
           </table>
         </article>
       </section>
       <section>
-        <img class="img-fluid mx-auto d-block" src="img/landschaft.jpg" alt="طبيعيه">
-        <p class="text-center text-break fs-4">نأمل أن تلقي هذه البيانات بعض الضوء على انبعاثات غازات الاحتباس الحراري في جميع أنحاء العالم. دعونا نعمل جميعًا معًا من أجل مستقبل مستدام لأن هذا الكوكب يستحق القتال من أجله!</p>
+        <img class="img-fluid mx-auto d-block" src="img/landschaft.jpg" alt="المناظر الطبيعية">
+        <p class="text-center text-break py-4 px-md-5 fs-4">نأمل أن تضيء هذه البيانات بعض الأمور حول انبعاثات الغازات الدفيئة في جميع أنحاء العالم. دعونا جميعًا نعمل معًا نحو مستقبل مستدام لأن هذا الكوكب يستحق الكفاح من أجله!</p>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer">
-    <!-- Contact -->
-      <section class="bg-dark text-white pt-5 mt-5">
-        <section class="container py-4 py-md-5 px-4 px-md-3">
-          <div class="row text-md-left">
+    <footer id="footer" dir="rtl">
+      <!-- Contact -->
+      <section class="bg-dark text-white pt-4 mt-4">
+        <section class="container py-2 px-4 px-md-3">
+          <div class="row text-md-right">
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fa fa-home"> Berlin, Germany</i></li>
-                  <li class="mb-2"><i class="fa fa-envelope"> info@gw.org</i></li>
-                  <li class="mb-2"><i class="fa fa-phone text-decoration-none"> +49 30 89 030</i></li>
-                </ul>
+              <h5 class="text-uppercase mb-4 font-weight-bold">تواصل معنا</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fa fa-home"></i> برلين, ألمانيا</li>
+                <li class="mb-2"><i class="fa fa-envelope"></i> info@gw.org</li>
+                <li class="mb-2"><i class="fa fa-phone text-decoration-none"></i> +49 30 89 030</li>
+              </ul>
             </div>
           </div>
         </section>
       </section>
-
       <section class="bg-dark text-center text-white">
-        <div class="container p-4">
+        <div class="container p-2">
           <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://facebook.com/" role="button"><i class="fa fa-facebook"></i></a>
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://twitter.com/" role="button"><i class="fa fa-twitter"></i></a>
             <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://google.com/" role="button"><i class="fa fa-google"></i></a>
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
             <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://linkedin.com/" role="button"><i class="fa fa-linkedin"></i></a>
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
+            <a class="btn social-media btn-floating m-1" href="https://github.com/el-we" role="button"><i class="fa fa-github"></i></a>
           </section>
 
           <!-- Section: Text -->
           <section class="mb-4">
             <p>
-              عالم أخضر - معًا من أجل عالم أكثر خضرة.
+              العالم الأخضر - معًا من أجل عالم أكثر خضرة.
             </p>
           </section>
         </div>
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2023 Copyright:
+        <div class="copyright text-center p-2">
+          © 2023 حقوق النشر:
           <a class="text-white" href="https://greenworld.com/">greenworld.com</a>
         </div>
       </section>
     </footer>
   </body>
 </html>
+
+        
+
+
